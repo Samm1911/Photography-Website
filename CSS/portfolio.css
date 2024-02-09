@@ -1,0 +1,79 @@
+\\style for portfolio page\\
+
+.background {
+  background-image: url("../Home-page-pix/black-gold.jpg");
+  background-repeat: repeat;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+a:hover {
+  color: rgb(120, 95, 15);
+}
+.site-header {
+  border-bottom: 1px solid rgb(120, 95, 15);
+  padding: 0.5em 1em;
+  display: flex;
+  justify-content: space-between;
+}
+.site-identity h1 {
+  font-size: 1.5em;
+  margin: 0.6em 0;
+  display: inline-block;
+}
+.navigation ul,
+.navigation li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin: 1.4em 1em 1em 1em;
+  justify-content: center;
+}
+
+.top-content,
+.home {
+  background-color: black;
+  width: 90%;
+  margin: 0 auto 20px auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px lightgray;
+}
+
+label {
+  display: inline-block;
+  height: 100%;
+  padding: 0 5px;
+  margin: 0 30px;
+  line-height: 60px;
+  font-size: 18px;
+  color: gray;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+label:hover {
+  color: black;
+}
+.Photo-gallery {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.img:hover {
+  color: #424242;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  opacity: 1;
+  transform: scale(1.15);
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari and Chrome */
+}

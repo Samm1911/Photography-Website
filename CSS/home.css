@@ -1,0 +1,149 @@
+h1 {
+  text-align: center;
+  font-weight: normal;
+  color: black;
+  font-size: 35px;
+  position: relative;
+  margin: 40px 0;
+}
+h1::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: rgb(120, 95, 15);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: animate 4s linear infinite;
+}
+@keyframes animate {
+  0% {
+    width: 100px;
+  }
+  50% {
+    width: 200px;
+  }
+
+  100% {
+    width: 100px;
+  }
+}
+h2 {
+  text-align: center;
+  color: black;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(120, 95, 15);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+.site-header {
+  padding: 0.5em 1em;
+  display: flex;
+  justify-content: space-between;
+}
+.site-identity h1 {
+  font-size: 1.5em;
+  margin: 0.6em 0;
+  display: inline-block;
+}
+.navigation ul,
+.navigation li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin: 1.4em 1em 1em 1em;
+  justify-content: center;
+}
+.container {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+.div-img {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 20%;
+}
+img {
+  transition: transform 0.2s;
+  margin: 0 auto;
+  background-color: rgb(9, 9, 10);
+  border-radius: 10px;
+  border: 1px solid black;
+}
+img:hover {
+  transform: scale(1.2);
+}
+.background {
+  background-image: url("../Home-page-pix/whiteflower.jpg");
+  background-repeat: repeat;
+}
+
+---------------------------------------
+
+/* Dropdown Button */
+.dropbtn {
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.dropbtn:hover {
+  color: rgb(120, 95, 15);
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: black;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #080808;
+  border-radius: 10%;
+
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: whitesmoke;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: rgb(120, 95, 15);
+  border-radius: 10%;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: rgb(120, 95, 15);
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  columns: rgb(120, 95, 15);
+}
