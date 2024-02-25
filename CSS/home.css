@@ -85,8 +85,7 @@ img {
 img:hover {
   transform: scale(1.2);
 }
-
-/* .background {
+/*.background {
   background-image: url("../Home-page-pix/whiteflower.jpg");
   background-repeat: repeat;
 }
